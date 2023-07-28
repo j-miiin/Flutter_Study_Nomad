@@ -1,3 +1,4 @@
+import 'package:exchange_rate_calculator/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -69,39 +70,14 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(45)),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 50,
-                      ),
-                      child: Text(
-                        'Transfer',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                        color: Color(0xFF1F2123),
-                        borderRadius: BorderRadius.circular(45)),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 50,
-                      ),
-                      child: Text(
-                        'Request',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  )
+                  Button(
+                      text: 'Transfer',
+                      btnColor: Color(0xFFF1B33B),
+                      textColor: Colors.black),
+                  Button(
+                      text: 'Request',
+                      btnColor: Color(0xFF1F2123),
+                      textColor: Colors.white),
                 ],
               )
             ],
