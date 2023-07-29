@@ -1,16 +1,3 @@
-# exchange_rate_calculator
+## 실행화면
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/j-miiin/Flutter_Study_Nomad/assets/62470991/10c0804b-aeca-42e6-b5e6-0552c71fc0b7" width="300" height="600"/>
