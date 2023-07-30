@@ -70,4 +70,94 @@
     setState(() {});
   }
   ```
+
+  </br>
+
+## BuildContext
+- __context__ : 이전에 있는 모든 상위 요소들에 대한 정보
+  - context에는 위젯 트리에 대한 정보가 담겨있고, 먼 요소의 데이터를 가져올 수 있어 유용
+  ```dart
+  ...
+  
+  class _AppState extends State<App> {
+    @override
+    Widget build(BuildContext context) {
+      return MaterialApp(
+        theme: ThemeData(
+          textTheme: const TextTheme(
+            titleLarge: TextStyle(
+              color: Colors.red,
+            ),
+          ),
+        ),
+        home: Scaffold(
+          backgroundColor: const Color(0xFFF4EDDB),
+          body: Center(
+            MyLargeTitle(),
+          )
+        ),
+      );
+    }
+  }
+   
+  class MyLargeTitle extends StatelessWidget {
+    const MyLargeTitle({
+      Key? key,
+    })  : super(key: key);
+      
+    @override
+    Widget build(BuildContext context) {
+      return Text(
+        'My Large Title',
+        style: TextStyle(
+          fontsize: 30,
+          color: Theme.of(context).textTheme.titleLarge?.color,
+        ),
+      );
+    }
+  }
+  ```
+- BuildContext는 위젯 트리에서 위젯의 위치를 제공하고, 상위 요소 데이터에 접근할 수 있게 함
+
+</br>
+
+## Widget Lifecycle
+- __initState__ : 상태를 초기화하기 위한 메소드
+  - 부모 요소에 의존하는 데이터를 초기화 할 때 사용
+  - 항상 build 메소드보다 먼저 호출되어야 하며, 단 한 번만 호출됨
+- __dispose__ : 위젯이 스크린에서 제거될 때 호출되는 메소드
+  - API 업데이트나 이벤트 리스너로부터 구독을 취소하거나, form의 리스너로부터 벗어나고 싶을 때 사용 
+  ```dart
+  class MyLargeTitle extends StatefulWidget {
+    const MyLargeTitle({
+      Key? key,
+    })  : super(key: key);
+      
+    @override
+    State<MyLargeTitle> createState() => _MyLargeTitleState();
+  }
+   
+  class _MyLargeTitle extends State<MyLargeTitle> {   
+    @override
+    void initState() {
+      super.initState();
+    }
+      
+    @override
+    void dispose() {
+      super.dispose();
+    }
+   
+    @override
+    Widget build(BuildContext context) {
+      return Text(
+        'My Large Title',
+        style: TextStyle(
+          fontsize: 30,
+          color: Theme.of(context).textTheme.titleLarge?.color,
+        ),
+      );
+    }
+  }
+  ```
   
