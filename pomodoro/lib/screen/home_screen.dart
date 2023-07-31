@@ -48,6 +48,12 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void onRestartPressed() {
+    setState(() {
+      totalSeconds = twentyFiveMinutes;
+    });
+  }
+
   String format(int seconds) {
     var duration = Duration(seconds: seconds);
     return duration.toString().split(".").first.substring(2, 7);
@@ -87,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: Theme.of(context).cardColor,
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: onRestartPressed,
                   icon: Icon(Icons.restart_alt),
                   iconSize: 35,
                   color: Theme.of(context).cardColor,
