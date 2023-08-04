@@ -37,7 +37,7 @@ class Webtoon extends StatelessWidget {
             // tag 값으로 동일한 이미지를 연결시켜주면 화면을 전환할 때 이미지가 새로 만들어지는게 아니라 떠다니는 것처럼 보임
             tag: id,
             child: Container(
-              width: 250,
+              width: 200,
               clipBehavior: Clip.hardEdge,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
@@ -52,7 +52,7 @@ class Webtoon extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 15,
           ),
           Text(
             title,
