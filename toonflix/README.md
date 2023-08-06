@@ -1,16 +1,9 @@
-# toonflix
+## 실행화면
 
-A new Flutter project.
+<img src="https://github.com/j-miiin/Flutter_Study_Nomad/assets/62470991/82ccd1cb-8662-44e3-9813-72df7f29b0de" width="280" height="620"/>
 
-## Getting Started
+<img src="https://github.com/j-miiin/Flutter_Study_Nomad/assets/62470991/16e0e0a9-5875-4394-b95f-86e957c5dc8f" width="280" height="620"/>
 
-This project is a starting point for a Flutter application.
+### 코드챌린지
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/j-miiin/Flutter_Study_Nomad/assets/62470991/46d27a18-aa77-45ae-9fa4-0d3afee0436a" width="280" height="620"/>
